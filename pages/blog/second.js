@@ -1,5 +1,18 @@
+import Link from 'next/link';
+
+
 function SecondBlog(){
-    return <h1>Second Blog page</h1>
+    return (
+     <div>
+        <Link href='/'>
+            <a>Home</a>
+        </Link>
+        <Link href='/blog'>
+            <a>Blog</a>
+        </Link>
+        <h1>Second Blog page</h1>
+     </div>
+    )
 }
 
 export default SecondBlog
